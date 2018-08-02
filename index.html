@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<div class="bg">
+    <div class="mask"></div>
+</div>
+<div class="box">
+    <!--//左上角的logo-->
+    <img src="img/player_logo@2x.png" style="width:100px" class="logo">
+    <!--左侧的盒子-->
+    <div class="leftbox">
+        <!--收藏的列表等-->
+        <ul class="border1">
+            <li><span></span>收藏</li>
+            <li><span></span>添加到</li>
+            <li><span></span>下载</li>
+            <li><span></span>删除</li>
+            <li><span></span>清空列表</li>
+        </ul>
+        <!--歌曲的列表的播放事件-->
+        <div class="title">
+            <input type="checkbox" name="checkAllSong" class="square">
+            <span>歌曲</span>
+            <span class="fb"></span>
+            <span>歌手</span>
+            <span>时长</span>
+            <div class="wrap">
+                <ul class="listsong"></ul>
+                <!--滚动条-->
+                <div id="sliderWrap">
+                    <div id="slider"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+<!--右侧盒子-->
+<div class="rightbox">
+    <!--头像的背景图片-->
+    <div class="musicbg"></div>
+    <!--图片-->
+    <img src="" class="pic">
+    <!--下面的内容部分-->
+    <p class="song">歌曲名</p>
+    <p class="singer">歌手</p>
+    <!--歌词部分，还没有实现-->
+    <div class="lyics">
+    </div>
+</div>
+<!--最下面的控制台部分-->
+<div class="console">
+    <!--左侧的三个按钮-->
+    <div class="btn">
+        <!--上一曲-->
+        <span class="prev"></span>
+        <!--播放按钮-->
+        <span class="play">
+                <div class="start"></div>
+                <div class="stop"></div>
+            </span>
+        <!--下一曲的按钮-->
+        <span class="next"></span>
+    </div>
+    <!--中间的歌曲的进度条-->
+    <div class="zhongjia">
+        <!--上面的获取时间等-->
+        <div class="up">
+            <div class="up-left">
+                <span class="song">歌手</span>
+                <span class="singer"> -歌手</span>
+            </div>
+            <!--这个是获取时间-->
+            <div class="up-right">
+                <span class="nowtime">00:00</span>
+                <span class="jieshu">/00:00</span>
+            </div>
+        </div>
+        <!--这个是进度条-->
+        <div class="down">
+            <!--底下最长的部分-->
+            <div class="zongchangdu"></div>
+            <!--小圆点的部分-->
+            <div class="circle"></div>
+            <!--歌曲播放的进度-->
+            <div class="hou"></div>
+        </div>
+    </div>
+    <!--歌曲的播放模式-->
+    <div class="con-right">
+        <!--模式的图片-->
+        <div class="playorder">
+            <div class="default model"></div>
+            <div class="random model"></div>
+            <div class="single model"></div>
+            <div class="order model"></div>
+        </div>
+        <div class="tip">播放模式</div>
+        <!--模式的选择部分-->
+        <ul class="orderList ">
+            <li data-index1="0">循序播放</li>
+            <li data-index1="1">随机播放</li>
+            <li data-index1="2">单曲循环</li>
+            <li data-index1="3">列表循环</li>
+        </ul>
+        <!--喜欢的歌曲的部分-->
+        <div class="loveSong">
+            <div class="love"></div>
+            <div class="red"></div>
+        </div>
+        <!--音量部分-->
+        <div class="sound">
+            <!--音量的图标的-->
+            <div class="voice">
+                <div class="voice1"></div>
+                <div class="voice2"></div>
+            </div>
+            <!--音量的控制台-->
+            <div class="voiceSound">
+                <div class="voiceCircle"></div>
+                <div class="voiceLine"></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<audio></audio>
+</body>
+<script src="js/index.js"></script>
+</html>
